@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    password: maanithab
+    url: jdbc:h2:file:~/data/synthesis
+    username: maanitha
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      use-new-id-generator-mappings: false
+      ddl-auto: create
+    generate-ddl: true
+  h2:
+    console:
+      enabled: true
